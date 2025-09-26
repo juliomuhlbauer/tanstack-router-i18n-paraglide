@@ -1,5 +1,5 @@
 {
-  "name": "i18n-paraglide",
+  "name": "tanstack-router-i18n-paraglide",
   "private": true,
   "type": "module",
   "scripts": {
