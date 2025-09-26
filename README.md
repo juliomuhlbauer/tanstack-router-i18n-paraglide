@@ -52,9 +52,11 @@ const router = createRouter({
 });
 ```
 
-In `__root.tsx` add a `beforeLoad` hook to check if the user should be redirected and set the HTML `lang` attribute.
+In `__root.tsx` add a `beforeLoad` hook to check if the user should be redirected and set the html `lang` attribute.
 
 ```ts
+import { shouldRedirect } from "../paraglide/runtime";
+
 export const Route = createRootRoute({
   beforeLoad: async () => {
     document.documentElement.setAttribute("lang", getLocale());
